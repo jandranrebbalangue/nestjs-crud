@@ -4,13 +4,10 @@
 name: Build and Test
 
 on:
-  push:
-    branches: [ "main","feature/**","bugfix/**","hotfix/**" ]
   pull_request:
-    branches: [ "main","feature/**","bugfix/**","hotfix/**" ]
+    branches: ["main", "feature/**", "bugfix/**", "hotfix/**"]
 
 jobs:
-
   Run-build-test-ubuntu:
     name: Build and Test on ubuntu
     runs-on: ubuntu-latest
@@ -18,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: "18.x"
       - run: npm install
       - run: npx prisma generate
       - run: npm run build
@@ -31,7 +28,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: "18.x"
       - run: npm install
       - run: npx prisma generate
       - run: npm run build
@@ -43,7 +40,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: "18.x"
       - run: npm install
       - run: npx prisma generate
       - run: npm run build
