@@ -1,10 +1,10 @@
-import { Test, TestingModule } from "@nestjs/testing"
-import { AppController } from "./app.controller"
-import { AppService } from "./app.service"
-import { PostService } from "./post.service"
-import { PrismaService } from "./prisma.service"
-import { UserService } from "./user.service"
-import { UsersModule } from "./users/users.module"
+import {Test, TestingModule} from "@nestjs/testing"
+import {AppController} from "./app.controller"
+import {AppService} from "./app.service"
+import {PostService} from "./post.service"
+import {PrismaService} from "./prisma.service"
+import {UserService} from "./user.service"
+import {UsersModule} from "./users/users.module"
 
 describe("AppController", () => {
   let appController: AppController
